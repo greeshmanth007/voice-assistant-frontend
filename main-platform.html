@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoiceBridge</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Text to Speech -->
+    <section>
+    <div class="first-block">
+      <h2 class="gradient-text">Text to Speech</h2>
+      <input type="text" placeholder="Type your text here..." />
+      <div>
+      <button class="btn-gradient-border">
+        <span>Convert to Speech</span>
+      </button>
+      </div>
+    </div>
+      <div class="audio-controls">
+        <button class="btn-action">Play</button>
+        <button class="btn-action">Pause</button>
+        <button class="btn-action">Stop</button>
+      </div>
+    </section>
+
+    <!-- Speech to Text -->
+    <section>
+        <div class="first-block">
+      <h2 class="gradient-text">Speech to Text</h2>
+      <input type="file" />
+      <textarea placeholder="Transcription output will appear here..."></textarea>
+      <div>
+      <button class="btn-gradient-border">
+        <span>Convert to Text</span>
+      </button>
+      </div>
+      </div>
+    </section>
+
+    <!-- Speech to Speech -->
+    <section>
+      <h2 class="gradient-text">Speech to Speech</h2>
+      <button id="speakBtn" onclick="toggleListening()">
+      <span class="fa fa-microphone"></span>
+      <span id="speakText">Speak Now</span>
+      </button>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
