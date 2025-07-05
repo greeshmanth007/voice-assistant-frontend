@@ -32,7 +32,12 @@
     <section>
         <div class="first-block">
       <h2 class="gradient-text">Speech to Text</h2>
-      <input type="file" />
+      <div>
+      <button id="speakBtn" onclick="toggleListening()">
+      <span class="fa fa-microphone"></span>
+      <span id="speakText">Speak Now</span>
+      </button>
+      </div>
       <textarea placeholder="Transcription output will appear here..."></textarea>
       <div>
       <button class="btn-gradient-border">
