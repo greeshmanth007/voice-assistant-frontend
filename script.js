@@ -117,3 +117,4 @@ async function toggleListening2() {
     button.style.backgroundColor = '#facc15';
   }
 }
+
